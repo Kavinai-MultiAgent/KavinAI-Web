@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import NextTopLoader from "nextjs-toploader";
 import Provider from "../Provider";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 const ProtectedLayout = ({ children }: { children: React.ReactNode }) => {
     const [loader, setLoader] = useState(true);
@@ -41,7 +43,9 @@ const ProtectedLayout = ({ children }: { children: React.ReactNode }) => {
                             zIndex={1600}
                             showAtBottom={false}
                         />
+                        <Navbar />
                         < main > {children} </main>
+                        <Footer />
                     </Provider>
                 </>
             )}
