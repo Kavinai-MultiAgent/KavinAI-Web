@@ -1,9 +1,8 @@
 import FAQ from "@/components/faq";
 import { Hero } from "@/components/hero";
 import { PainPoints } from "@/components/pain-points";
-import { Pricing } from "@/components/pricing";
+import { PricingComp } from "@/components/pricing-comp";
 import { SocialProof } from "@/components/social-proof";
-import { Testimonial } from "@/components/testimonial";
 import { UseCases } from "@/components/use-cases";
 import { WhyUs } from "@/components/why-us";
 
@@ -16,8 +15,8 @@ export default function Home() {
       <UseCases />
       <PainPoints />
       <WhyUs />
-      <Pricing />
-      <Testimonial />
+      <PricingComp />
+      {/* <Testimonial /> */}
       <FAQ />
     </main>
   );
